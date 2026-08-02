@@ -1,0 +1,40 @@
+name: Pubblica Diari di Pelle
+
+on:
+  schedule:
+    - cron: "0,30 8-19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarico i file
+        uses: actions/checkout@v4
+
+      - name: Preparo Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installo le librerie
+        run: pip install requests openpyxl
+
+      - name: Pubblico cio che e scaduto
+        env:
+          TOKEN_INSTAGRAM: ${{ secrets.TOKEN_INSTAGRAM }}
+          TOKEN_FACEBOOK: ${{ secrets.TOKEN_FACEBOOK }}
+        run: |
+          python ddp_publisher.py build --config config.json
+          python ddp_publisher.py run --config config.json --window 45
+
+      - name: Salvo cosa e stato pubblicato
+        run: |
+          git config user.name "Publisher automatico"
+          git config user.email "actions@github.com"
+          git add state.json queue.json || true
+          git diff --staged --quiet || git commit -m "Aggiornato registro"
+          git push || true
