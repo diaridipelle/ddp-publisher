@@ -2,9 +2,13 @@ name: Pubblica Diari di Pelle
 
 on:
   schedule:
-    - cron: "0,25 9-11 * * *"
-    - cron: "0,25 18-19 * * *"
-  workflow_dispatch:
+    # Il calendario ha tre orari italiani: 11:00, 12:00 e 20:00.
+    # GitHub ragiona in UTC: l'Italia e' avanti di 2 ore d'estate, 1 d'inverno.
+    # Copro entrambe le stagioni, con due passaggi per orario perche'
+    # la sveglia di GitHub puo' ritardare di parecchi minuti.
+    - cron: "0,25 9-11 * * *"     # -> 11:00 e 12:00 italiane
+    - cron: "0,25 18-19 * * *"    # -> 20:00 italiane
+  workflow_dispatch:              # per lanciarlo a mano quando vuoi
 
 permissions:
   contents: write
@@ -26,7 +30,6 @@ jobs:
 
       - name: Pubblico cio che e scaduto
         env:
-          TOKEN_INSTAGRAM: ${{ secrets.TOKEN_INSTAGRAM }}
           TOKEN_FACEBOOK: ${{ secrets.TOKEN_FACEBOOK }}
         run: |
           python ddp_publisher.py build --config config.json
@@ -36,6 +39,6 @@ jobs:
         run: |
           git config user.name "Publisher automatico"
           git config user.email "actions@github.com"
-          git add state.json queue.json || true
+          git add state.json queue.json token_instagram.txt || true
           git diff --staged --quiet || git commit -m "Aggiornato registro"
           git push || true
