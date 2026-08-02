@@ -1,1 +1,19 @@
-{"done": {}, "failed": {}}
+{
+  "done": {
+    "T001|instagram|reel|TRAILER": {
+      "at": "2026-08-02T01:40:26",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "TRAILER",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T006|instagram|carosello|TRAILER": {
+      "at": "2026-08-02T01:40:26",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "TRAILER",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    }
+  },
+  "failed": {}
+}
