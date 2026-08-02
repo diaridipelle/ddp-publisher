@@ -2,7 +2,8 @@ name: Pubblica Diari di Pelle
 
 on:
   schedule:
-    - cron: "0,30 8-19 * * *"
+    - cron: "0,25 9-11 * * *"
+    - cron: "0,25 18-19 * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,7 +30,7 @@ jobs:
           TOKEN_FACEBOOK: ${{ secrets.TOKEN_FACEBOOK }}
         run: |
           python ddp_publisher.py build --config config.json
-          python ddp_publisher.py run --config config.json --window 45
+          python ddp_publisher.py run --config config.json --window 120
 
       - name: Salvo cosa e stato pubblicato
         run: |
