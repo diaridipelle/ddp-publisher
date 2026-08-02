@@ -1,0 +1,195 @@
+{
+  "done": {
+    "T007|facebook|carosello|TRAILER": {
+      "at": "2026-08-01T17:59:00",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "TRAILER",
+      "info": "fb 1092859193920217_122117118711320018"
+    },
+    "T002|facebook|reel|TRAILER": {
+      "at": "2026-08-01T18:21:26",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "TRAILER",
+      "info": "fb schedulato 122117119959320018"
+    },
+    "T009|facebook|reel|CH01": {
+      "at": "2026-08-01T18:21:56",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH01",
+      "info": "fb schedulato 122117120103320018"
+    },
+    "T014|facebook|carosello|CH01": {
+      "at": "2026-08-01T18:22:20",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH01",
+      "info": "fb schedulato 1092859193920217_122117120313320018"
+    },
+    "T016|facebook|reel|CH02": {
+      "at": "2026-08-01T18:22:42",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH02",
+      "info": "fb schedulato 122117120463320018"
+    },
+    "T021|facebook|carosello|CH02": {
+      "at": "2026-08-01T18:23:08",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH02",
+      "info": "fb schedulato 1092859193920217_122117120787320018"
+    },
+    "T023|facebook|reel|CH03": {
+      "at": "2026-08-01T18:23:28",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH03",
+      "info": "fb schedulato 122117120949320018"
+    },
+    "T028|facebook|carosello|CH03": {
+      "at": "2026-08-01T18:23:51",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH03",
+      "info": "fb schedulato 1092859193920217_122117121195320018"
+    },
+    "T030|facebook|reel|CH04": {
+      "at": "2026-08-01T18:24:09",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH04",
+      "info": "fb schedulato 122117121375320018"
+    },
+    "T035|facebook|carosello|CH04": {
+      "at": "2026-08-01T18:24:44",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH04",
+      "info": "fb schedulato 1092859193920217_122117121681320018"
+    },
+    "T037|facebook|reel|CH05": {
+      "at": "2026-08-01T18:25:02",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH05",
+      "info": "fb schedulato 122117121867320018"
+    },
+    "T042|facebook|carosello|CH05": {
+      "at": "2026-08-01T18:25:31",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH05",
+      "info": "fb schedulato 1092859193920217_122117122245320018"
+    },
+    "T044|facebook|reel|CH06": {
+      "at": "2026-08-01T18:25:49",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH06",
+      "info": "fb schedulato 122117122371320018"
+    },
+    "T049|facebook|carosello|CH06": {
+      "at": "2026-08-01T18:26:17",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH06",
+      "info": "fb schedulato 1092859193920217_122117122653320018"
+    },
+    "T051|facebook|reel|CH07": {
+      "at": "2026-08-01T18:26:42",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH07",
+      "info": "fb schedulato 122117122797320018"
+    },
+    "T056|facebook|carosello|CH07": {
+      "at": "2026-08-01T18:27:11",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH07",
+      "info": "fb schedulato 1092859193920217_122117123043320018"
+    },
+    "T006|instagram|carosello|TRAILER": {
+      "at": "2026-08-02T02:02:26",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "TRAILER",
+      "info": "ig media 17984390790021577"
+    },
+    "T001|instagram|reel|TRAILER": {
+      "at": "2026-08-02T02:10:18",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "TRAILER",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    }
+  },
+  "failed": {
+    "T058|facebook|reel|CH08": {
+      "at": "2026-08-01T18:57:26",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH08",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T063|facebook|carosello|CH08": {
+      "at": "2026-08-01T18:57:48",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH08",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T065|facebook|reel|CH09": {
+      "at": "2026-08-01T18:58:11",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH09",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T070|facebook|carosello|CH09": {
+      "at": "2026-08-01T18:58:36",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH09",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T072|facebook|reel|CH10": {
+      "at": "2026-08-01T18:59:06",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH10",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T077|facebook|carosello|CH10": {
+      "at": "2026-08-01T18:59:28",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH10",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T079|facebook|reel|TRAILER": {
+      "at": "2026-08-01T18:59:59",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "TRAILER",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T084|facebook|carosello|TRAILER": {
+      "at": "2026-08-01T19:00:23",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "TRAILER",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    },
+    "T086|facebook|reel|CH01": {
+      "at": "2026-08-01T19:00:43",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH01",
+      "info": "FB: (#100) The specified scheduled publish time is invalid."
+    }
+  }
+}

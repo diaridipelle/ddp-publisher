@@ -1,0 +1,28 @@
+{
+  "calendar_xlsx": "C:/DDP/Calendario_Social_Diari_di_Pelle_4_Mesi.xlsx",
+  "packs_root": "C:/DDP/packs",
+  "media_base_url": "https://diaridipelle.it/social",
+
+  "queue_file": "queue.json",
+  "state_file": "state.json",
+
+"instagram": {
+    "enabled": true,
+    "instagram_login": true,
+    "instagram_app_id": "1861341421506581",
+    "instagram_app_secret": "QUI_LA_CHIAVE_VERA",
+    "redirect_uri": "https://diaridipelle.it/"
+  },
+
+  "facebook": {
+    "enabled": true,
+    "page_id": "1092859193920217",
+    "page_access_token": "EAATyDrAuf5ABSF8AN1yNMkHTmZAJHhHYEMaCHn2GxMFuSCZCWHdRvAy06VQPSq75OSg1X9pQIecEFnibgNMerQt9kcDoJToEVzKYfltNmBZB9jw4EA291CN3xIgEdfgY58ZAZA0KTf5Ios1yCLd7a6kJZCguGXFYgfyqeYcmjA3c3vajvBfGlvz2rO2CKaIYZA6cG4IZAYxJKzICQENgC35vmYNhUbuw0UodWe1nB3MV85COSZB8rtYL3aZArWqHR00GdW2WEZA2PQuUGmuVkv1b0HZB8wZDZD"
+  },
+
+  "tiktok": {
+    "enabled": false,
+    "access_token": "",
+    "direct_post": false
+  }
+}
