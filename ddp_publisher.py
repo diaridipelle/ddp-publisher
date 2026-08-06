@@ -33,7 +33,7 @@ from dataclasses import dataclass, asdict, field
 from datetime import datetime, timedelta, date, time as dtime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-from urllib.parse import urlencode
+from urllib.parse import urlencode, unquote
 
 try:
     import requests
@@ -689,19 +689,73 @@ class FacebookClient:
 
 class TikTokClient:
     """
-    Due modalita':
-      direct_post = false  -> il video arriva nella Posta in arrivo / bozze TikTok,
-                              tu apri l'app e confermi. Non richiede audit.
-      direct_post = true   -> pubblicazione diretta. Richiede lo scope video.publish
-                              E l'audit dell'app: senza audit il post resta privato.
+    Manda i video nelle BOZZE di TikTok (inbox). Tu apri l'app e confermi.
+    E' l'unico modo senza passare l'audit di TikTok, che richiede settimane.
+
+    Il file viene scaricato dal sito e rimandato a TikTok come byte:
+    cosi' non serve verificare il dominio nel portale sviluppatori.
     """
 
     def __init__(self, cfg):
-        c = cfg["tiktok"]
-        self.token = leggi_token(cfg, "tiktok")
-        self.direct = bool(c.get("direct_post", False))
-        self.privacy = c.get("privacy_level", "PUBLIC_TO_EVERYONE")
+        self.cfg = cfg
+        self.sez = cfg.get("tiktok", {})
+        self.dati = self._leggi_dati()
+        self.token = self.dati.get("access_token", "")
         self.dry = False
+
+    # --- gestione del token -------------------------------------------------
+
+    def _percorso(self) -> Path:
+        return Path(self.cfg["_dir"]) / "token_tiktok.json"
+
+    def _leggi_dati(self) -> dict:
+        da_ambiente = os.environ.get("TOKEN_TIKTOK", "").strip()
+        if da_ambiente:
+            try:
+                return json.loads(da_ambiente)
+            except Exception:
+                return {"access_token": da_ambiente}
+        f = self._percorso()
+        if f.exists():
+            try:
+                return json.loads(f.read_text(encoding="utf-8"))
+            except Exception:
+                return {}
+        return {}
+
+    def _salva_dati(self, dati: dict) -> None:
+        self._percorso().write_text(
+            json.dumps(dati, indent=2), encoding="utf-8")
+
+    def rinnova(self) -> bool:
+        """Il token TikTok dura 24 ore: si rinnova col refresh_token."""
+        refresh = self.dati.get("refresh_token")
+        client_key = self.sez.get("client_key")
+        client_secret = self.sez.get("client_secret")
+        if not (refresh and client_key and client_secret):
+            return False
+
+        r = requests.post("https://open.tiktokapis.com/v2/oauth/token/", data={
+            "client_key": client_key,
+            "client_secret": client_secret,
+            "grant_type": "refresh_token",
+            "refresh_token": refresh,
+        }, headers={"Content-Type": "application/x-www-form-urlencoded"},
+            timeout=60).json()
+
+        if "access_token" not in r:
+            print(f"    rinnovo TikTok non riuscito: {r.get('error_description', r)}")
+            return False
+
+        self.dati.update({
+            "access_token": r["access_token"],
+            "refresh_token": r.get("refresh_token", refresh),
+            "rinnovato_il": datetime.now().isoformat(timespec="seconds"),
+        })
+        self.token = r["access_token"]
+        self._salva_dati(self.dati)
+        print("    token TikTok rinnovato")
+        return True
 
     def _headers(self):
         return {
@@ -709,43 +763,80 @@ class TikTokClient:
             "Content-Type": "application/json; charset=UTF-8",
         }
 
-    def creator_info(self):
-        if self.dry:
-            return {"data": {"privacy_level_options": [self.privacy]}}
-        r = requests.post(f"{TIKTOK}/post/publish/creator_info/query/",
-                          headers=self._headers(), timeout=60)
-        return r.json()
+    def verifica(self) -> Optional[str]:
+        """Controlla il token e, se scaduto, prova a rinnovarlo da solo."""
+        if not self.token:
+            return ("Nessun token TikTok. Lancia:\n"
+                    "     py ddp_publisher.py token-tiktok --config config.json")
+        for tentativo in (1, 2):
+            r = requests.get("https://open.tiktokapis.com/v2/user/info/",
+                             params={"fields": "open_id,display_name"},
+                             headers={"Authorization": f"Bearer {self.token}"},
+                             timeout=60).json()
+            if "error" in r and r["error"].get("code") not in ("ok", None):
+                if tentativo == 1 and self.rinnova():
+                    continue
+                return f"Token TikTok rifiutato: {r['error'].get('message')}"
+            nome = r.get("data", {}).get("user", {}).get("display_name", "?")
+            print(f"TikTok collegato: {nome}")
+            return None
+        return "Token TikTok non utilizzabile."
 
-    def publish_video(self, video_url, title):
-        if self.direct:
-            endpoint = f"{TIKTOK}/post/publish/video/init/"
-            body = {
-                "post_info": {
-                    "title": title[:2200],
-                    "privacy_level": self.privacy,
-                    "disable_duet": False,
-                    "disable_comment": False,
-                    "disable_stitch": False,
-                },
-                "source_info": {
-                    "source": "PULL_FROM_URL",
-                    "video_url": video_url,
-                },
-            }
-        else:
-            endpoint = f"{TIKTOK}/post/publish/inbox/video/init/"
-            body = {"source_info": {"source": "PULL_FROM_URL", "video_url": video_url}}
+    # --- pubblicazione ------------------------------------------------------
 
+    def publish_video(self, video_url, title, file_locale: Optional[Path] = None):
         if self.dry:
-            print(f"    POST {endpoint}  {json.dumps(body, ensure_ascii=False)[:400]}")
+            print(f"    POST {TIKTOK}/post/publish/inbox/video/init/  "
+                  f"(FILE_UPLOAD, titolo: {title[:60]}...)")
             return {"data": {"publish_id": "DRYRUN"}}
 
-        r = requests.post(endpoint, headers=self._headers(),
-                          data=json.dumps(body), timeout=120)
-        data = r.json()
-        if data.get("error", {}).get("code") not in (None, "ok"):
-            raise RuntimeError(f"TikTok: {data['error']}")
-        return data
+        # 1. prendo i byte del video: dal disco se c'e', altrimenti dal sito
+        if file_locale and file_locale.exists():
+            dati_video = file_locale.read_bytes()
+        else:
+            print("    scarico il video dal sito...")
+            risposta = requests.get(video_url, timeout=300)
+            if risposta.status_code != 200:
+                raise RuntimeError(
+                    f"TikTok: non riesco a scaricare il video "
+                    f"(HTTP {risposta.status_code})")
+            dati_video = risposta.content
+
+        dimensione = len(dati_video)
+        print(f"    invio a TikTok ({dimensione / 1048576:.1f} MB)...")
+
+        # 2. apro il caricamento (un pezzo solo: i video sono piccoli)
+        init = requests.post(
+            f"{TIKTOK}/post/publish/inbox/video/init/",
+            headers=self._headers(),
+            data=json.dumps({"source_info": {
+                "source": "FILE_UPLOAD",
+                "video_size": dimensione,
+                "chunk_size": dimensione,
+                "total_chunk_count": 1,
+            }}),
+            timeout=120).json()
+
+        errore = init.get("error", {})
+        if errore.get("code") not in ("ok", None):
+            raise RuntimeError(f"TikTok: {errore.get('message')}")
+
+        upload_url = init["data"]["upload_url"]
+        publish_id = init["data"]["publish_id"]
+
+        # 3. mando i byte
+        put = requests.put(
+            upload_url,
+            headers={
+                "Content-Range": f"bytes 0-{dimensione - 1}/{dimensione}",
+                "Content-Type": "video/mp4",
+            },
+            data=dati_video,
+            timeout=900)
+        if put.status_code not in (200, 201, 204):
+            raise RuntimeError(f"TikTok caricamento: {put.text[:300]}")
+
+        return {"data": {"publish_id": publish_id}}
 
 
 # ---------------------------------------------------------------------------
@@ -786,9 +877,10 @@ def publish_task(cfg, t: Task, clients, dry: bool) -> str:
 
     if t.platform == "tiktok":
         tk = clients["tk"]
-        r = tk.publish_video(urls[0], caption)
+        locale = Path(cfg["packs_root"]) / t.media[0]
+        r = tk.publish_video(urls[0], caption, file_locale=locale)
         pid = r.get("data", {}).get("publish_id")
-        return f"tiktok {pid} ({'diretto' if tk.direct else 'bozza'})"
+        return f"tiktok {pid} (in bozza - conferma dall'app)"
 
     raise RuntimeError(f"piattaforma sconosciuta: {t.platform}")
 
@@ -861,6 +953,11 @@ def cmd_run(cfg, args) -> None:
                 # riallineo col profilo: se un contenuto e' gia' online, non lo rifaccio
                 cmd_ig_sync(cfg)
                 state = load_state(cfg)
+        if "tk" in clients:
+            guaio = clients["tk"].verifica()
+            if guaio:
+                print(f"TIKTOK saltato - {guaio.splitlines()[0]}")
+                clients.pop("tk")
         if not clients:
             print("Nessuna piattaforma utilizzabile. Rigenera i token.")
             return
@@ -1312,6 +1409,53 @@ def cmd_token_instagram(cfg, args) -> None:
           "--content TRAILER --fmt carosello --dry-run")
 
 
+def cmd_reset(cfg, args) -> None:
+    """
+    Toglie dal registro dei contenuti gia' pubblicati, cosi' possono
+    uscire di nuovo. Serve per riproporre vecchi contenuti.
+
+    Esempi:
+      py ddp_publisher.py reset --config config.json --content TRAILER
+      py ddp_publisher.py reset --config config.json --book Notti --only instagram
+    """
+    if not any(getattr(args, f, None) for f in
+               ("content", "book", "only", "fmt", "task")):
+        print("Serve almeno un filtro, per non azzerare tutto per sbaglio.")
+        print("  --content TRAILER     --book Notti")
+        print("  --only instagram      --fmt reel        --task T009")
+        return
+
+    tasks = filter_tasks(load_queue(cfg), args)
+    state = load_state(cfg)
+
+    da_togliere = [t for t in tasks
+                   if t.key in state["done"] or t.key in state["failed"]]
+
+    if not da_togliere:
+        print("Nessun contenuto gia' pubblicato corrisponde ai filtri.")
+        return
+
+    print(f"\n{len(da_togliere)} contenuti tornerebbero 'da pubblicare':\n")
+    for t in da_togliere:
+        stato = "pubblicato" if t.key in state["done"] else "fallito"
+        print(f"  {t.dt:%d/%m %H:%M}  {t.platform:9} {t.fmt:9} "
+              f"{t.content_id:8} ({stato})")
+
+    print("\nUsciranno di nuovo appena arriva la loro data.")
+    if not args.yes:
+        risposta = input("\nScrivi SI per confermare: ").strip().upper()
+        if risposta not in ("SI", "SÌ", "S", "YES"):
+            print("Annullato.")
+            return
+
+    for t in da_togliere:
+        state["done"].pop(t.key, None)
+        state["failed"].pop(t.key, None)
+    save_state(cfg, state)
+    print(f"\nFatto: {len(da_togliere)} contenuti rimessi in coda.")
+    print("Ricordati di ricaricare state.json su GitHub.")
+
+
 def cmd_ig_refresh(cfg) -> None:
     """
     Allunga il token di Instagram di altri 60 giorni.
@@ -1390,7 +1534,18 @@ def cmd_ig_sync(cfg) -> None:
         pulito = re.sub(r"\s+", " ", (testo or "")).strip().lower()
         return pulito[:80]
 
-    gia_online = {impronta(m.get("caption")) for m in pubblicati if m.get("caption")}
+    # Il tipo conta: Reel e carosello dello stesso capitolo hanno la STESSA
+    # caption, quindi confrontare solo il testo li confonderebbe.
+    def tipo_ig(media_type: str) -> str:
+        mt = (media_type or "").upper()
+        if mt in ("CAROUSEL_ALBUM", "CAROUSEL"):
+            return "carosello"
+        if mt in ("VIDEO", "REELS", "REEL"):
+            return "reel"
+        return "immagine"
+
+    gia_online = {(impronta(m.get("caption")), tipo_ig(m.get("media_type")))
+                  for m in pubblicati if m.get("caption")}
 
     tasks = load_queue(cfg)
     state = load_state(cfg)
@@ -1401,7 +1556,8 @@ def cmd_ig_sync(cfg) -> None:
             continue
         if not t.caption:
             continue
-        if impronta(t.caption) in gia_online:
+        atteso = "carosello" if t.fmt == "carosello" else "reel"
+        if (impronta(t.caption), atteso) in gia_online:
             mark(state, t, True, "ig gia' pubblicato (trovato sul profilo)")
             aggiunti += 1
             print(f"  gia' online: {t.fmt:9} {t.content_id} - {t.title}")
@@ -1410,6 +1566,167 @@ def cmd_ig_sync(cfg) -> None:
     print(f"\nRegistro aggiornato: {aggiunti} contenuti segnati come gia' fatti.")
     if aggiunti == 0:
         print("(nessuna corrispondenza: nessun rischio di doppioni)")
+
+
+def cmd_token_tiktok(cfg, args) -> None:
+    """Collega l'account TikTok. Da fare una volta sola."""
+    sez = cfg.get("tiktok", {})
+    client_key = str(sez.get("client_key") or "").strip()
+    client_secret = str(sez.get("client_secret") or "").strip()
+    redirect = str(sez.get("redirect_uri") or "").strip()
+
+    if not (client_key and client_secret and redirect):
+        print("\nManca qualcosa nel config.json, sezione \"tiktok\":")
+        print('  "enabled": true,')
+        print('  "client_key": "...",')
+        print('  "client_secret": "...",')
+        print('  "redirect_uri": "https://diaridipelle.it/"')
+        print("\nI valori stanno su developers.tiktok.com -> la tua app ->")
+        print("Basic information (Client key e Client secret).")
+        return
+
+    stato = "ddp" + str(int(time.time()))
+    url = "https://www.tiktok.com/v2/auth/authorize/?" + urlencode({
+        "client_key": client_key,
+        "scope": "user.info.basic,video.upload",
+        "response_type": "code",
+        "redirect_uri": redirect,
+        "state": stato,
+    })
+
+    print("\n--- COLLEGAMENTO TIKTOK ---\n")
+    print("1. Copia questo indirizzo e aprilo nel browser:\n")
+    print(f"   {url}\n")
+    print("2. Accedi con l'account TikTok di Diari di Pelle e autorizza")
+    print("3. Il browser ti rimanda a diaridipelle.it: copia dalla barra")
+    print("   degli indirizzi tutto cio' che contiene ?code=\n")
+
+    risposta = input("Indirizzo (o solo il codice): ").strip()
+    if not risposta:
+        print("Annullato.")
+        return
+    if "auth/authorize" in risposta:
+        print("\nQuesto e' l'indirizzo che ti ho dato io, non quello di ritorno.")
+        return
+
+    codice = risposta
+    if "code=" in risposta:
+        codice = risposta.split("code=", 1)[1].split("&")[0]
+    codice = unquote(codice.rstrip("#_").strip())
+
+    print("\nScambio il codice con un token...")
+    r = requests.post("https://open.tiktokapis.com/v2/oauth/token/", data={
+        "client_key": client_key,
+        "client_secret": client_secret,
+        "code": codice,
+        "grant_type": "authorization_code",
+        "redirect_uri": redirect,
+    }, headers={"Content-Type": "application/x-www-form-urlencoded"},
+        timeout=60).json()
+
+    if "access_token" not in r:
+        print(f"\nERRORE: {r}")
+        print("\nIl codice si usa una volta sola: rilancia il comando.")
+        print("Controlla anche che redirect_uri combaci con quello nell'app.")
+        return
+
+    dati = {
+        "access_token": r["access_token"],
+        "refresh_token": r.get("refresh_token", ""),
+        "open_id": r.get("open_id", ""),
+        "creato_il": datetime.now().isoformat(timespec="seconds"),
+    }
+    f = Path(cfg["_dir"]) / "token_tiktok.json"
+    f.write_text(json.dumps(dati, indent=2), encoding="utf-8")
+
+    print("\n*** FATTO ***")
+    print(f"Token salvato in: {f}")
+    print("\nL'accesso dura 24 ore ma si rinnova da solo (il rinnovo vale un anno).")
+    print("\nProva con:")
+    print("  py ddp_publisher.py test --config config.json --only tiktok "
+          "--content TRAILER --fmt reel --dry-run")
+
+
+def cmd_tiktok_batch(cfg, args) -> None:
+    """
+    Manda in blocco i video nelle bozze di TikTok e prepara un file con
+    le caption nello stesso ordine, pronte da copiare.
+
+    L'API dell'inbox non accetta il testo: la caption va incollata a mano
+    nell'app. Questo comando ti evita almeno di cercarla ogni volta.
+    """
+    if not cfg.get("tiktok", {}).get("enabled"):
+        sys.exit("TikTok non abilitato nel config.")
+
+    tk = TikTokClient(cfg)
+    tk.dry = args.dry_run
+    if not args.dry_run:
+        guaio = tk.verifica()
+        if guaio:
+            print(f"\n>>> {guaio}")
+            return
+
+    tasks = filter_tasks(load_queue(cfg), args)
+    state = load_state(cfg)
+    da_fare = [t for t in tasks
+               if t.platform == "tiktok" and t.key not in state["done"]]
+
+    quanti = getattr(args, "limit", 0) or len(da_fare)
+    da_fare = da_fare[:quanti]
+
+    if not da_fare:
+        print("Niente da caricare su TikTok.")
+        return
+
+    print(f"\n{len(da_fare)} video da mandare nelle bozze di TikTok.")
+    print("Le caption non entrano nelle bozze: te le preparo in un file.\n")
+
+    righe = ["# Caption TikTok — nell'ordine in cui hai caricato i video", ""]
+    righe.append("Le bozze in TikTok appaiono con la piu' recente in alto,")
+    righe.append("quindi leggi questo elenco dal BASSO verso l'ALTO.")
+    righe.append("")
+    righe.append("---")
+    righe.append("")
+
+    ok = errori = 0
+    for n, t in enumerate(da_fare, 1):
+        url = media_url(cfg, t.media[0])
+        locale = Path(cfg["packs_root"]) / t.media[0]
+        print(f"[{n}/{len(da_fare)}] {t.dt:%d/%m} {t.content_id} - {t.title}")
+        try:
+            r = tk.publish_video(url, t.caption, file_locale=locale)
+            pid = r.get("data", {}).get("publish_id")
+            print(f"    OK: {pid}")
+            ok += 1
+            if not args.dry_run:
+                mark(state, t, True, f"tiktok bozza {pid}")
+                save_state(cfg, state)
+
+            righe.append(f"## {n}. {t.content_id} — {t.title}")
+            righe.append(f"*(data prevista: {t.dt:%d/%m/%Y})*")
+            righe.append("")
+            righe.append("```")
+            righe.append(t.caption)
+            righe.append("```")
+            righe.append("")
+        except Exception as e:
+            print(f"    ERRORE: {e}")
+            errori += 1
+            if not args.dry_run:
+                mark(state, t, False, str(e))
+                save_state(cfg, state)
+        if not args.dry_run and n < len(da_fare):
+            time.sleep(5)
+
+    outdir = Path(cfg["_dir"]) / "DA_PUBBLICARE_A_MANO"
+    outdir.mkdir(exist_ok=True)
+    f = outdir / f"caption_tiktok_{datetime.now():%Y-%m-%d_%H%M}.md"
+    f.write_text("\n".join(righe), encoding="utf-8")
+
+    print(f"\nCaricati: {ok}   Falliti: {errori}")
+    print(f"Caption pronte in: {f}")
+    print("\nApri TikTok, vai nelle bozze e per ognuna incolla la caption")
+    print("corrispondente. L'elenco va letto dal basso verso l'alto.")
 
 
 def cmd_fb_list(cfg) -> None:
@@ -1655,7 +1972,7 @@ def main():
                              "export", "fb-batch", "status",
                              "token", "token-check", "fb-list",
                              "sync", "auto", "token-instagram", "ig-sync",
-                             "ig-refresh"])
+                             "ig-refresh", "reset", "token-tiktok", "tiktok-batch"])
     ap.add_argument("--config", default="config.json")
     ap.add_argument("--days", type=int, default=7,
                     help="quanti giorni avanti programmare (max 180)")
@@ -1675,6 +1992,8 @@ def main():
                    help="reel, storia, carosello")
     g.add_argument("--task", metavar="ID",
                    help="numero preciso del task: T001")
+    g.add_argument("--limit", type=int, default=0,
+                   help="carica al massimo N video (0 = tutti)")
     g.add_argument("--yes", action="store_true",
                    help="salta la richiesta di conferma in 'test'")
 
@@ -1713,6 +2032,12 @@ def main():
         cmd_ig_sync(cfg)
     elif args.command == "ig-refresh":
         cmd_ig_refresh(cfg)
+    elif args.command == "reset":
+        cmd_reset(cfg, args)
+    elif args.command == "token-tiktok":
+        cmd_token_tiktok(cfg, args)
+    elif args.command == "tiktok-batch":
+        cmd_tiktok_batch(cfg, args)
 
 
 if __name__ == "__main__":
