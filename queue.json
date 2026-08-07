@@ -1,7 +1,7 @@
 [
   {
     "task_id": "T002",
-    "when": "2026-08-04T20:00:00",
+    "when": "2026-08-07T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -16,7 +16,7 @@
   },
   {
     "task_id": "T001",
-    "when": "2026-08-04T20:00:00",
+    "when": "2026-08-07T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -31,7 +31,7 @@
   },
   {
     "task_id": "T003",
-    "when": "2026-08-04T20:00:00",
+    "when": "2026-08-07T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -46,7 +46,7 @@
   },
   {
     "task_id": "T005",
-    "when": "2026-08-05T12:00:00",
+    "when": "2026-08-08T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -61,7 +61,7 @@
   },
   {
     "task_id": "T004",
-    "when": "2026-08-05T12:00:00",
+    "when": "2026-08-08T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -76,7 +76,7 @@
   },
   {
     "task_id": "T007",
-    "when": "2026-08-06T20:00:00",
+    "when": "2026-08-09T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -93,7 +93,7 @@
   },
   {
     "task_id": "T006",
-    "when": "2026-08-06T20:00:00",
+    "when": "2026-08-09T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -110,7 +110,7 @@
   },
   {
     "task_id": "T009",
-    "when": "2026-08-07T20:00:00",
+    "when": "2026-08-10T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -125,7 +125,7 @@
   },
   {
     "task_id": "T008",
-    "when": "2026-08-07T20:00:00",
+    "when": "2026-08-10T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -140,7 +140,7 @@
   },
   {
     "task_id": "T010",
-    "when": "2026-08-07T20:00:00",
+    "when": "2026-08-10T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -155,7 +155,7 @@
   },
   {
     "task_id": "T012",
-    "when": "2026-08-08T12:00:00",
+    "when": "2026-08-11T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -170,7 +170,7 @@
   },
   {
     "task_id": "T011",
-    "when": "2026-08-08T12:00:00",
+    "when": "2026-08-11T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -185,7 +185,7 @@
   },
   {
     "task_id": "T014",
-    "when": "2026-08-09T11:00:00",
+    "when": "2026-08-12T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -202,7 +202,7 @@
   },
   {
     "task_id": "T013",
-    "when": "2026-08-09T11:00:00",
+    "when": "2026-08-12T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -219,7 +219,7 @@
   },
   {
     "task_id": "T016",
-    "when": "2026-08-11T20:00:00",
+    "when": "2026-08-14T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -234,7 +234,7 @@
   },
   {
     "task_id": "T015",
-    "when": "2026-08-11T20:00:00",
+    "when": "2026-08-14T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -249,7 +249,7 @@
   },
   {
     "task_id": "T017",
-    "when": "2026-08-11T20:00:00",
+    "when": "2026-08-14T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -264,7 +264,7 @@
   },
   {
     "task_id": "T019",
-    "when": "2026-08-12T12:00:00",
+    "when": "2026-08-15T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -279,7 +279,7 @@
   },
   {
     "task_id": "T018",
-    "when": "2026-08-12T12:00:00",
+    "when": "2026-08-15T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -294,7 +294,7 @@
   },
   {
     "task_id": "T021",
-    "when": "2026-08-13T20:00:00",
+    "when": "2026-08-16T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -311,7 +311,7 @@
   },
   {
     "task_id": "T020",
-    "when": "2026-08-13T20:00:00",
+    "when": "2026-08-16T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -328,7 +328,7 @@
   },
   {
     "task_id": "T023",
-    "when": "2026-08-14T20:00:00",
+    "when": "2026-08-17T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -343,7 +343,7 @@
   },
   {
     "task_id": "T022",
-    "when": "2026-08-14T20:00:00",
+    "when": "2026-08-17T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -358,7 +358,7 @@
   },
   {
     "task_id": "T024",
-    "when": "2026-08-14T20:00:00",
+    "when": "2026-08-17T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -373,7 +373,7 @@
   },
   {
     "task_id": "T026",
-    "when": "2026-08-15T12:00:00",
+    "when": "2026-08-18T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -388,7 +388,7 @@
   },
   {
     "task_id": "T025",
-    "when": "2026-08-15T12:00:00",
+    "when": "2026-08-18T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -403,7 +403,7 @@
   },
   {
     "task_id": "T028",
-    "when": "2026-08-16T11:00:00",
+    "when": "2026-08-19T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -420,7 +420,7 @@
   },
   {
     "task_id": "T027",
-    "when": "2026-08-16T11:00:00",
+    "when": "2026-08-19T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -437,7 +437,7 @@
   },
   {
     "task_id": "T030",
-    "when": "2026-08-18T20:00:00",
+    "when": "2026-08-21T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -452,7 +452,7 @@
   },
   {
     "task_id": "T029",
-    "when": "2026-08-18T20:00:00",
+    "when": "2026-08-21T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -467,7 +467,7 @@
   },
   {
     "task_id": "T031",
-    "when": "2026-08-18T20:00:00",
+    "when": "2026-08-21T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -482,7 +482,7 @@
   },
   {
     "task_id": "T033",
-    "when": "2026-08-19T12:00:00",
+    "when": "2026-08-22T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -497,7 +497,7 @@
   },
   {
     "task_id": "T032",
-    "when": "2026-08-19T12:00:00",
+    "when": "2026-08-22T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -512,7 +512,7 @@
   },
   {
     "task_id": "T035",
-    "when": "2026-08-20T20:00:00",
+    "when": "2026-08-23T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -529,7 +529,7 @@
   },
   {
     "task_id": "T034",
-    "when": "2026-08-20T20:00:00",
+    "when": "2026-08-23T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -546,7 +546,7 @@
   },
   {
     "task_id": "T037",
-    "when": "2026-08-21T20:00:00",
+    "when": "2026-08-24T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -561,7 +561,7 @@
   },
   {
     "task_id": "T036",
-    "when": "2026-08-21T20:00:00",
+    "when": "2026-08-24T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -576,7 +576,7 @@
   },
   {
     "task_id": "T038",
-    "when": "2026-08-21T20:00:00",
+    "when": "2026-08-24T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -591,7 +591,7 @@
   },
   {
     "task_id": "T040",
-    "when": "2026-08-22T12:00:00",
+    "when": "2026-08-25T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -606,7 +606,7 @@
   },
   {
     "task_id": "T039",
-    "when": "2026-08-22T12:00:00",
+    "when": "2026-08-25T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -621,7 +621,7 @@
   },
   {
     "task_id": "T042",
-    "when": "2026-08-23T11:00:00",
+    "when": "2026-08-26T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -638,7 +638,7 @@
   },
   {
     "task_id": "T041",
-    "when": "2026-08-23T11:00:00",
+    "when": "2026-08-26T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -655,7 +655,7 @@
   },
   {
     "task_id": "T044",
-    "when": "2026-08-25T20:00:00",
+    "when": "2026-08-28T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -670,7 +670,7 @@
   },
   {
     "task_id": "T043",
-    "when": "2026-08-25T20:00:00",
+    "when": "2026-08-28T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -685,7 +685,7 @@
   },
   {
     "task_id": "T045",
-    "when": "2026-08-25T20:00:00",
+    "when": "2026-08-28T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -700,7 +700,7 @@
   },
   {
     "task_id": "T047",
-    "when": "2026-08-26T12:00:00",
+    "when": "2026-08-29T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -715,7 +715,7 @@
   },
   {
     "task_id": "T046",
-    "when": "2026-08-26T12:00:00",
+    "when": "2026-08-29T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -730,7 +730,7 @@
   },
   {
     "task_id": "T049",
-    "when": "2026-08-27T20:00:00",
+    "when": "2026-08-30T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -747,7 +747,7 @@
   },
   {
     "task_id": "T048",
-    "when": "2026-08-27T20:00:00",
+    "when": "2026-08-30T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -764,7 +764,7 @@
   },
   {
     "task_id": "T051",
-    "when": "2026-08-28T20:00:00",
+    "when": "2026-08-31T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -779,7 +779,7 @@
   },
   {
     "task_id": "T050",
-    "when": "2026-08-28T20:00:00",
+    "when": "2026-08-31T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -794,7 +794,7 @@
   },
   {
     "task_id": "T052",
-    "when": "2026-08-28T20:00:00",
+    "when": "2026-08-31T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -809,7 +809,7 @@
   },
   {
     "task_id": "T054",
-    "when": "2026-08-29T12:00:00",
+    "when": "2026-09-01T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -824,7 +824,7 @@
   },
   {
     "task_id": "T053",
-    "when": "2026-08-29T12:00:00",
+    "when": "2026-09-01T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -839,7 +839,7 @@
   },
   {
     "task_id": "T056",
-    "when": "2026-08-30T11:00:00",
+    "when": "2026-09-02T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -856,7 +856,7 @@
   },
   {
     "task_id": "T055",
-    "when": "2026-08-30T11:00:00",
+    "when": "2026-09-02T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -873,7 +873,7 @@
   },
   {
     "task_id": "T058",
-    "when": "2026-09-01T20:00:00",
+    "when": "2026-09-04T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -888,7 +888,7 @@
   },
   {
     "task_id": "T057",
-    "when": "2026-09-01T20:00:00",
+    "when": "2026-09-04T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -903,7 +903,7 @@
   },
   {
     "task_id": "T059",
-    "when": "2026-09-01T20:00:00",
+    "when": "2026-09-04T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -918,7 +918,7 @@
   },
   {
     "task_id": "T061",
-    "when": "2026-09-02T12:00:00",
+    "when": "2026-09-05T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -933,7 +933,7 @@
   },
   {
     "task_id": "T060",
-    "when": "2026-09-02T12:00:00",
+    "when": "2026-09-05T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -948,7 +948,7 @@
   },
   {
     "task_id": "T063",
-    "when": "2026-09-03T20:00:00",
+    "when": "2026-09-06T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -965,7 +965,7 @@
   },
   {
     "task_id": "T062",
-    "when": "2026-09-03T20:00:00",
+    "when": "2026-09-06T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -982,7 +982,7 @@
   },
   {
     "task_id": "T065",
-    "when": "2026-09-04T20:00:00",
+    "when": "2026-09-07T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -997,7 +997,7 @@
   },
   {
     "task_id": "T064",
-    "when": "2026-09-04T20:00:00",
+    "when": "2026-09-07T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -1012,7 +1012,7 @@
   },
   {
     "task_id": "T066",
-    "when": "2026-09-04T20:00:00",
+    "when": "2026-09-07T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -1027,7 +1027,7 @@
   },
   {
     "task_id": "T068",
-    "when": "2026-09-05T12:00:00",
+    "when": "2026-09-08T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -1042,7 +1042,7 @@
   },
   {
     "task_id": "T067",
-    "when": "2026-09-05T12:00:00",
+    "when": "2026-09-08T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -1057,7 +1057,7 @@
   },
   {
     "task_id": "T070",
-    "when": "2026-09-06T11:00:00",
+    "when": "2026-09-09T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -1074,7 +1074,7 @@
   },
   {
     "task_id": "T069",
-    "when": "2026-09-06T11:00:00",
+    "when": "2026-09-09T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -1091,7 +1091,7 @@
   },
   {
     "task_id": "T072",
-    "when": "2026-09-08T20:00:00",
+    "when": "2026-09-11T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -1106,7 +1106,7 @@
   },
   {
     "task_id": "T071",
-    "when": "2026-09-08T20:00:00",
+    "when": "2026-09-11T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -1121,7 +1121,7 @@
   },
   {
     "task_id": "T073",
-    "when": "2026-09-08T20:00:00",
+    "when": "2026-09-11T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Notti Fugaci",
@@ -1136,7 +1136,7 @@
   },
   {
     "task_id": "T075",
-    "when": "2026-09-09T12:00:00",
+    "when": "2026-09-12T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -1151,7 +1151,7 @@
   },
   {
     "task_id": "T074",
-    "when": "2026-09-09T12:00:00",
+    "when": "2026-09-12T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Notti Fugaci",
@@ -1166,7 +1166,7 @@
   },
   {
     "task_id": "T077",
-    "when": "2026-09-10T20:00:00",
+    "when": "2026-09-13T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -1183,7 +1183,7 @@
   },
   {
     "task_id": "T076",
-    "when": "2026-09-10T20:00:00",
+    "when": "2026-09-13T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Notti Fugaci",
@@ -1200,7 +1200,7 @@
   },
   {
     "task_id": "T079",
-    "when": "2026-09-11T20:00:00",
+    "when": "2026-09-14T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1215,7 +1215,7 @@
   },
   {
     "task_id": "T078",
-    "when": "2026-09-11T20:00:00",
+    "when": "2026-09-14T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1230,7 +1230,7 @@
   },
   {
     "task_id": "T080",
-    "when": "2026-09-11T20:00:00",
+    "when": "2026-09-14T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1245,7 +1245,7 @@
   },
   {
     "task_id": "T082",
-    "when": "2026-09-12T12:00:00",
+    "when": "2026-09-15T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1260,7 +1260,7 @@
   },
   {
     "task_id": "T081",
-    "when": "2026-09-12T12:00:00",
+    "when": "2026-09-15T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1275,7 +1275,7 @@
   },
   {
     "task_id": "T084",
-    "when": "2026-09-13T11:00:00",
+    "when": "2026-09-16T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1292,7 +1292,7 @@
   },
   {
     "task_id": "T083",
-    "when": "2026-09-13T11:00:00",
+    "when": "2026-09-16T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1309,7 +1309,7 @@
   },
   {
     "task_id": "T086",
-    "when": "2026-09-15T20:00:00",
+    "when": "2026-09-18T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1324,7 +1324,7 @@
   },
   {
     "task_id": "T085",
-    "when": "2026-09-15T20:00:00",
+    "when": "2026-09-18T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1339,7 +1339,7 @@
   },
   {
     "task_id": "T087",
-    "when": "2026-09-15T20:00:00",
+    "when": "2026-09-18T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1354,7 +1354,7 @@
   },
   {
     "task_id": "T089",
-    "when": "2026-09-16T12:00:00",
+    "when": "2026-09-19T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1369,7 +1369,7 @@
   },
   {
     "task_id": "T088",
-    "when": "2026-09-16T12:00:00",
+    "when": "2026-09-19T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1384,7 +1384,7 @@
   },
   {
     "task_id": "T091",
-    "when": "2026-09-17T20:00:00",
+    "when": "2026-09-20T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1401,7 +1401,7 @@
   },
   {
     "task_id": "T090",
-    "when": "2026-09-17T20:00:00",
+    "when": "2026-09-20T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1418,7 +1418,7 @@
   },
   {
     "task_id": "T093",
-    "when": "2026-09-18T20:00:00",
+    "when": "2026-09-21T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1433,7 +1433,7 @@
   },
   {
     "task_id": "T092",
-    "when": "2026-09-18T20:00:00",
+    "when": "2026-09-21T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1448,7 +1448,7 @@
   },
   {
     "task_id": "T094",
-    "when": "2026-09-18T20:00:00",
+    "when": "2026-09-21T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1463,7 +1463,7 @@
   },
   {
     "task_id": "T096",
-    "when": "2026-09-19T12:00:00",
+    "when": "2026-09-22T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1478,7 +1478,7 @@
   },
   {
     "task_id": "T095",
-    "when": "2026-09-19T12:00:00",
+    "when": "2026-09-22T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1493,7 +1493,7 @@
   },
   {
     "task_id": "T098",
-    "when": "2026-09-20T11:00:00",
+    "when": "2026-09-23T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1510,7 +1510,7 @@
   },
   {
     "task_id": "T097",
-    "when": "2026-09-20T11:00:00",
+    "when": "2026-09-23T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1527,7 +1527,7 @@
   },
   {
     "task_id": "T100",
-    "when": "2026-09-22T20:00:00",
+    "when": "2026-09-25T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1542,7 +1542,7 @@
   },
   {
     "task_id": "T099",
-    "when": "2026-09-22T20:00:00",
+    "when": "2026-09-25T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1557,7 +1557,7 @@
   },
   {
     "task_id": "T101",
-    "when": "2026-09-22T20:00:00",
+    "when": "2026-09-25T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1572,7 +1572,7 @@
   },
   {
     "task_id": "T103",
-    "when": "2026-09-23T12:00:00",
+    "when": "2026-09-26T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1587,7 +1587,7 @@
   },
   {
     "task_id": "T102",
-    "when": "2026-09-23T12:00:00",
+    "when": "2026-09-26T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1602,7 +1602,7 @@
   },
   {
     "task_id": "T105",
-    "when": "2026-09-24T20:00:00",
+    "when": "2026-09-27T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1619,7 +1619,7 @@
   },
   {
     "task_id": "T104",
-    "when": "2026-09-24T20:00:00",
+    "when": "2026-09-27T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1636,7 +1636,7 @@
   },
   {
     "task_id": "T107",
-    "when": "2026-09-25T20:00:00",
+    "when": "2026-09-28T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1651,7 +1651,7 @@
   },
   {
     "task_id": "T106",
-    "when": "2026-09-25T20:00:00",
+    "when": "2026-09-28T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1666,7 +1666,7 @@
   },
   {
     "task_id": "T108",
-    "when": "2026-09-25T20:00:00",
+    "when": "2026-09-28T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1681,7 +1681,7 @@
   },
   {
     "task_id": "T110",
-    "when": "2026-09-26T12:00:00",
+    "when": "2026-09-29T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1696,7 +1696,7 @@
   },
   {
     "task_id": "T109",
-    "when": "2026-09-26T12:00:00",
+    "when": "2026-09-29T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1711,7 +1711,7 @@
   },
   {
     "task_id": "T112",
-    "when": "2026-09-27T11:00:00",
+    "when": "2026-09-30T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1728,7 +1728,7 @@
   },
   {
     "task_id": "T111",
-    "when": "2026-09-27T11:00:00",
+    "when": "2026-09-30T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1745,7 +1745,7 @@
   },
   {
     "task_id": "T114",
-    "when": "2026-09-29T20:00:00",
+    "when": "2026-10-02T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1760,7 +1760,7 @@
   },
   {
     "task_id": "T113",
-    "when": "2026-09-29T20:00:00",
+    "when": "2026-10-02T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1775,7 +1775,7 @@
   },
   {
     "task_id": "T115",
-    "when": "2026-09-29T20:00:00",
+    "when": "2026-10-02T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1790,7 +1790,7 @@
   },
   {
     "task_id": "T117",
-    "when": "2026-09-30T12:00:00",
+    "when": "2026-10-03T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1805,7 +1805,7 @@
   },
   {
     "task_id": "T116",
-    "when": "2026-09-30T12:00:00",
+    "when": "2026-10-03T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1820,7 +1820,7 @@
   },
   {
     "task_id": "T119",
-    "when": "2026-10-01T20:00:00",
+    "when": "2026-10-04T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1837,7 +1837,7 @@
   },
   {
     "task_id": "T118",
-    "when": "2026-10-01T20:00:00",
+    "when": "2026-10-04T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1854,7 +1854,7 @@
   },
   {
     "task_id": "T121",
-    "when": "2026-10-02T20:00:00",
+    "when": "2026-10-05T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1869,7 +1869,7 @@
   },
   {
     "task_id": "T120",
-    "when": "2026-10-02T20:00:00",
+    "when": "2026-10-05T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1884,7 +1884,7 @@
   },
   {
     "task_id": "T122",
-    "when": "2026-10-02T20:00:00",
+    "when": "2026-10-05T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1899,7 +1899,7 @@
   },
   {
     "task_id": "T124",
-    "when": "2026-10-03T12:00:00",
+    "when": "2026-10-06T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1914,7 +1914,7 @@
   },
   {
     "task_id": "T123",
-    "when": "2026-10-03T12:00:00",
+    "when": "2026-10-06T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -1929,7 +1929,7 @@
   },
   {
     "task_id": "T126",
-    "when": "2026-10-04T11:00:00",
+    "when": "2026-10-07T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1946,7 +1946,7 @@
   },
   {
     "task_id": "T125",
-    "when": "2026-10-04T11:00:00",
+    "when": "2026-10-07T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -1963,7 +1963,7 @@
   },
   {
     "task_id": "T128",
-    "when": "2026-10-06T20:00:00",
+    "when": "2026-10-09T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1978,7 +1978,7 @@
   },
   {
     "task_id": "T127",
-    "when": "2026-10-06T20:00:00",
+    "when": "2026-10-09T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -1993,7 +1993,7 @@
   },
   {
     "task_id": "T129",
-    "when": "2026-10-06T20:00:00",
+    "when": "2026-10-09T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2008,7 +2008,7 @@
   },
   {
     "task_id": "T131",
-    "when": "2026-10-07T12:00:00",
+    "when": "2026-10-10T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2023,7 +2023,7 @@
   },
   {
     "task_id": "T130",
-    "when": "2026-10-07T12:00:00",
+    "when": "2026-10-10T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2038,7 +2038,7 @@
   },
   {
     "task_id": "T133",
-    "when": "2026-10-08T20:00:00",
+    "when": "2026-10-11T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2055,7 +2055,7 @@
   },
   {
     "task_id": "T132",
-    "when": "2026-10-08T20:00:00",
+    "when": "2026-10-11T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2072,7 +2072,7 @@
   },
   {
     "task_id": "T135",
-    "when": "2026-10-09T20:00:00",
+    "when": "2026-10-12T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2087,7 +2087,7 @@
   },
   {
     "task_id": "T134",
-    "when": "2026-10-09T20:00:00",
+    "when": "2026-10-12T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2102,7 +2102,7 @@
   },
   {
     "task_id": "T136",
-    "when": "2026-10-09T20:00:00",
+    "when": "2026-10-12T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2117,7 +2117,7 @@
   },
   {
     "task_id": "T138",
-    "when": "2026-10-10T12:00:00",
+    "when": "2026-10-13T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2132,7 +2132,7 @@
   },
   {
     "task_id": "T137",
-    "when": "2026-10-10T12:00:00",
+    "when": "2026-10-13T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2147,7 +2147,7 @@
   },
   {
     "task_id": "T140",
-    "when": "2026-10-11T11:00:00",
+    "when": "2026-10-14T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2164,7 +2164,7 @@
   },
   {
     "task_id": "T139",
-    "when": "2026-10-11T11:00:00",
+    "when": "2026-10-14T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2181,7 +2181,7 @@
   },
   {
     "task_id": "T142",
-    "when": "2026-10-13T20:00:00",
+    "when": "2026-10-16T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2196,7 +2196,7 @@
   },
   {
     "task_id": "T141",
-    "when": "2026-10-13T20:00:00",
+    "when": "2026-10-16T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2211,7 +2211,7 @@
   },
   {
     "task_id": "T143",
-    "when": "2026-10-13T20:00:00",
+    "when": "2026-10-16T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2226,7 +2226,7 @@
   },
   {
     "task_id": "T145",
-    "when": "2026-10-14T12:00:00",
+    "when": "2026-10-17T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2241,7 +2241,7 @@
   },
   {
     "task_id": "T144",
-    "when": "2026-10-14T12:00:00",
+    "when": "2026-10-17T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2256,7 +2256,7 @@
   },
   {
     "task_id": "T147",
-    "when": "2026-10-15T20:00:00",
+    "when": "2026-10-18T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2273,7 +2273,7 @@
   },
   {
     "task_id": "T146",
-    "when": "2026-10-15T20:00:00",
+    "when": "2026-10-18T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2290,7 +2290,7 @@
   },
   {
     "task_id": "T149",
-    "when": "2026-10-16T20:00:00",
+    "when": "2026-10-19T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2305,7 +2305,7 @@
   },
   {
     "task_id": "T148",
-    "when": "2026-10-16T20:00:00",
+    "when": "2026-10-19T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2320,7 +2320,7 @@
   },
   {
     "task_id": "T150",
-    "when": "2026-10-16T20:00:00",
+    "when": "2026-10-19T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Intrecci Sbagliati",
@@ -2335,7 +2335,7 @@
   },
   {
     "task_id": "T152",
-    "when": "2026-10-17T12:00:00",
+    "when": "2026-10-20T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2350,7 +2350,7 @@
   },
   {
     "task_id": "T151",
-    "when": "2026-10-17T12:00:00",
+    "when": "2026-10-20T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Intrecci Sbagliati",
@@ -2365,7 +2365,7 @@
   },
   {
     "task_id": "T154",
-    "when": "2026-10-18T11:00:00",
+    "when": "2026-10-21T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2382,7 +2382,7 @@
   },
   {
     "task_id": "T153",
-    "when": "2026-10-18T11:00:00",
+    "when": "2026-10-21T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Intrecci Sbagliati",
@@ -2399,7 +2399,7 @@
   },
   {
     "task_id": "T156",
-    "when": "2026-10-20T20:00:00",
+    "when": "2026-10-23T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -2414,7 +2414,7 @@
   },
   {
     "task_id": "T155",
-    "when": "2026-10-20T20:00:00",
+    "when": "2026-10-23T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -2429,7 +2429,7 @@
   },
   {
     "task_id": "T157",
-    "when": "2026-10-20T20:00:00",
+    "when": "2026-10-23T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -2444,7 +2444,7 @@
   },
   {
     "task_id": "T159",
-    "when": "2026-10-21T12:00:00",
+    "when": "2026-10-24T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -2459,7 +2459,7 @@
   },
   {
     "task_id": "T158",
-    "when": "2026-10-21T12:00:00",
+    "when": "2026-10-24T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -2474,7 +2474,7 @@
   },
   {
     "task_id": "T161",
-    "when": "2026-10-22T20:00:00",
+    "when": "2026-10-25T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -2491,7 +2491,7 @@
   },
   {
     "task_id": "T160",
-    "when": "2026-10-22T20:00:00",
+    "when": "2026-10-25T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -2508,7 +2508,7 @@
   },
   {
     "task_id": "T163",
-    "when": "2026-10-23T20:00:00",
+    "when": "2026-10-26T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -2523,7 +2523,7 @@
   },
   {
     "task_id": "T162",
-    "when": "2026-10-23T20:00:00",
+    "when": "2026-10-26T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -2538,7 +2538,7 @@
   },
   {
     "task_id": "T164",
-    "when": "2026-10-23T20:00:00",
+    "when": "2026-10-26T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -2553,7 +2553,7 @@
   },
   {
     "task_id": "T166",
-    "when": "2026-10-24T12:00:00",
+    "when": "2026-10-27T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -2568,7 +2568,7 @@
   },
   {
     "task_id": "T165",
-    "when": "2026-10-24T12:00:00",
+    "when": "2026-10-27T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -2583,7 +2583,7 @@
   },
   {
     "task_id": "T168",
-    "when": "2026-10-25T11:00:00",
+    "when": "2026-10-28T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -2600,7 +2600,7 @@
   },
   {
     "task_id": "T167",
-    "when": "2026-10-25T11:00:00",
+    "when": "2026-10-28T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -2617,7 +2617,7 @@
   },
   {
     "task_id": "T170",
-    "when": "2026-10-27T20:00:00",
+    "when": "2026-10-30T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -2632,7 +2632,7 @@
   },
   {
     "task_id": "T169",
-    "when": "2026-10-27T20:00:00",
+    "when": "2026-10-30T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -2647,7 +2647,7 @@
   },
   {
     "task_id": "T171",
-    "when": "2026-10-27T20:00:00",
+    "when": "2026-10-30T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -2662,7 +2662,7 @@
   },
   {
     "task_id": "T173",
-    "when": "2026-10-28T12:00:00",
+    "when": "2026-10-31T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -2677,7 +2677,7 @@
   },
   {
     "task_id": "T172",
-    "when": "2026-10-28T12:00:00",
+    "when": "2026-10-31T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -2692,7 +2692,7 @@
   },
   {
     "task_id": "T175",
-    "when": "2026-10-29T20:00:00",
+    "when": "2026-11-01T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -2709,7 +2709,7 @@
   },
   {
     "task_id": "T174",
-    "when": "2026-10-29T20:00:00",
+    "when": "2026-11-01T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -2726,7 +2726,7 @@
   },
   {
     "task_id": "T177",
-    "when": "2026-10-30T20:00:00",
+    "when": "2026-11-02T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -2741,7 +2741,7 @@
   },
   {
     "task_id": "T176",
-    "when": "2026-10-30T20:00:00",
+    "when": "2026-11-02T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -2756,7 +2756,7 @@
   },
   {
     "task_id": "T178",
-    "when": "2026-10-30T20:00:00",
+    "when": "2026-11-02T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -2771,7 +2771,7 @@
   },
   {
     "task_id": "T180",
-    "when": "2026-10-31T12:00:00",
+    "when": "2026-11-03T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -2786,7 +2786,7 @@
   },
   {
     "task_id": "T179",
-    "when": "2026-10-31T12:00:00",
+    "when": "2026-11-03T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -2801,7 +2801,7 @@
   },
   {
     "task_id": "T182",
-    "when": "2026-11-01T11:00:00",
+    "when": "2026-11-04T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -2818,7 +2818,7 @@
   },
   {
     "task_id": "T181",
-    "when": "2026-11-01T11:00:00",
+    "when": "2026-11-04T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -2835,7 +2835,7 @@
   },
   {
     "task_id": "T184",
-    "when": "2026-11-03T20:00:00",
+    "when": "2026-11-06T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -2850,7 +2850,7 @@
   },
   {
     "task_id": "T183",
-    "when": "2026-11-03T20:00:00",
+    "when": "2026-11-06T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -2865,7 +2865,7 @@
   },
   {
     "task_id": "T185",
-    "when": "2026-11-03T20:00:00",
+    "when": "2026-11-06T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -2880,7 +2880,7 @@
   },
   {
     "task_id": "T187",
-    "when": "2026-11-04T12:00:00",
+    "when": "2026-11-07T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -2895,7 +2895,7 @@
   },
   {
     "task_id": "T186",
-    "when": "2026-11-04T12:00:00",
+    "when": "2026-11-07T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -2910,7 +2910,7 @@
   },
   {
     "task_id": "T189",
-    "when": "2026-11-05T20:00:00",
+    "when": "2026-11-08T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -2927,7 +2927,7 @@
   },
   {
     "task_id": "T188",
-    "when": "2026-11-05T20:00:00",
+    "when": "2026-11-08T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -2944,7 +2944,7 @@
   },
   {
     "task_id": "T191",
-    "when": "2026-11-06T20:00:00",
+    "when": "2026-11-09T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -2959,7 +2959,7 @@
   },
   {
     "task_id": "T190",
-    "when": "2026-11-06T20:00:00",
+    "when": "2026-11-09T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -2974,7 +2974,7 @@
   },
   {
     "task_id": "T192",
-    "when": "2026-11-06T20:00:00",
+    "when": "2026-11-09T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -2989,7 +2989,7 @@
   },
   {
     "task_id": "T194",
-    "when": "2026-11-07T12:00:00",
+    "when": "2026-11-10T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -3004,7 +3004,7 @@
   },
   {
     "task_id": "T193",
-    "when": "2026-11-07T12:00:00",
+    "when": "2026-11-10T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -3019,7 +3019,7 @@
   },
   {
     "task_id": "T196",
-    "when": "2026-11-08T11:00:00",
+    "when": "2026-11-11T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -3036,7 +3036,7 @@
   },
   {
     "task_id": "T195",
-    "when": "2026-11-08T11:00:00",
+    "when": "2026-11-11T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -3053,7 +3053,7 @@
   },
   {
     "task_id": "T198",
-    "when": "2026-11-10T20:00:00",
+    "when": "2026-11-13T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -3068,7 +3068,7 @@
   },
   {
     "task_id": "T197",
-    "when": "2026-11-10T20:00:00",
+    "when": "2026-11-13T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -3083,7 +3083,7 @@
   },
   {
     "task_id": "T199",
-    "when": "2026-11-10T20:00:00",
+    "when": "2026-11-13T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -3098,7 +3098,7 @@
   },
   {
     "task_id": "T201",
-    "when": "2026-11-11T12:00:00",
+    "when": "2026-11-14T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -3113,7 +3113,7 @@
   },
   {
     "task_id": "T200",
-    "when": "2026-11-11T12:00:00",
+    "when": "2026-11-14T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -3128,7 +3128,7 @@
   },
   {
     "task_id": "T203",
-    "when": "2026-11-12T20:00:00",
+    "when": "2026-11-15T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -3145,7 +3145,7 @@
   },
   {
     "task_id": "T202",
-    "when": "2026-11-12T20:00:00",
+    "when": "2026-11-15T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -3162,7 +3162,7 @@
   },
   {
     "task_id": "T205",
-    "when": "2026-11-13T20:00:00",
+    "when": "2026-11-16T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -3177,7 +3177,7 @@
   },
   {
     "task_id": "T204",
-    "when": "2026-11-13T20:00:00",
+    "when": "2026-11-16T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -3192,7 +3192,7 @@
   },
   {
     "task_id": "T206",
-    "when": "2026-11-13T20:00:00",
+    "when": "2026-11-16T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -3207,7 +3207,7 @@
   },
   {
     "task_id": "T208",
-    "when": "2026-11-14T12:00:00",
+    "when": "2026-11-17T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -3222,7 +3222,7 @@
   },
   {
     "task_id": "T207",
-    "when": "2026-11-14T12:00:00",
+    "when": "2026-11-17T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -3237,7 +3237,7 @@
   },
   {
     "task_id": "T210",
-    "when": "2026-11-15T11:00:00",
+    "when": "2026-11-18T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -3254,7 +3254,7 @@
   },
   {
     "task_id": "T209",
-    "when": "2026-11-15T11:00:00",
+    "when": "2026-11-18T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -3271,7 +3271,7 @@
   },
   {
     "task_id": "T212",
-    "when": "2026-11-17T20:00:00",
+    "when": "2026-11-20T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -3286,7 +3286,7 @@
   },
   {
     "task_id": "T211",
-    "when": "2026-11-17T20:00:00",
+    "when": "2026-11-20T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -3301,7 +3301,7 @@
   },
   {
     "task_id": "T213",
-    "when": "2026-11-17T20:00:00",
+    "when": "2026-11-20T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -3316,7 +3316,7 @@
   },
   {
     "task_id": "T215",
-    "when": "2026-11-18T12:00:00",
+    "when": "2026-11-21T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -3331,7 +3331,7 @@
   },
   {
     "task_id": "T214",
-    "when": "2026-11-18T12:00:00",
+    "when": "2026-11-21T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -3346,7 +3346,7 @@
   },
   {
     "task_id": "T217",
-    "when": "2026-11-19T20:00:00",
+    "when": "2026-11-22T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -3363,7 +3363,7 @@
   },
   {
     "task_id": "T216",
-    "when": "2026-11-19T20:00:00",
+    "when": "2026-11-22T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -3380,7 +3380,7 @@
   },
   {
     "task_id": "T219",
-    "when": "2026-11-20T20:00:00",
+    "when": "2026-11-23T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -3395,7 +3395,7 @@
   },
   {
     "task_id": "T218",
-    "when": "2026-11-20T20:00:00",
+    "when": "2026-11-23T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -3410,7 +3410,7 @@
   },
   {
     "task_id": "T220",
-    "when": "2026-11-20T20:00:00",
+    "when": "2026-11-23T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -3425,7 +3425,7 @@
   },
   {
     "task_id": "T222",
-    "when": "2026-11-21T12:00:00",
+    "when": "2026-11-24T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -3440,7 +3440,7 @@
   },
   {
     "task_id": "T221",
-    "when": "2026-11-21T12:00:00",
+    "when": "2026-11-24T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -3455,7 +3455,7 @@
   },
   {
     "task_id": "T224",
-    "when": "2026-11-22T11:00:00",
+    "when": "2026-11-25T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -3472,7 +3472,7 @@
   },
   {
     "task_id": "T223",
-    "when": "2026-11-22T11:00:00",
+    "when": "2026-11-25T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -3489,7 +3489,7 @@
   },
   {
     "task_id": "T226",
-    "when": "2026-11-24T20:00:00",
+    "when": "2026-11-27T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -3504,7 +3504,7 @@
   },
   {
     "task_id": "T225",
-    "when": "2026-11-24T20:00:00",
+    "when": "2026-11-27T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -3519,7 +3519,7 @@
   },
   {
     "task_id": "T227",
-    "when": "2026-11-24T20:00:00",
+    "when": "2026-11-27T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -3534,7 +3534,7 @@
   },
   {
     "task_id": "T229",
-    "when": "2026-11-25T12:00:00",
+    "when": "2026-11-28T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -3549,7 +3549,7 @@
   },
   {
     "task_id": "T228",
-    "when": "2026-11-25T12:00:00",
+    "when": "2026-11-28T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -3564,7 +3564,7 @@
   },
   {
     "task_id": "T231",
-    "when": "2026-11-26T20:00:00",
+    "when": "2026-11-29T20:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -3581,7 +3581,7 @@
   },
   {
     "task_id": "T230",
-    "when": "2026-11-26T20:00:00",
+    "when": "2026-11-29T20:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
@@ -3598,7 +3598,7 @@
   },
   {
     "task_id": "T233",
-    "when": "2026-11-27T20:00:00",
+    "when": "2026-11-30T20:00:00",
     "platform": "facebook",
     "fmt": "reel",
     "book": "Legami",
@@ -3613,7 +3613,7 @@
   },
   {
     "task_id": "T232",
-    "when": "2026-11-27T20:00:00",
+    "when": "2026-11-30T20:00:00",
     "platform": "instagram",
     "fmt": "reel",
     "book": "Legami",
@@ -3628,7 +3628,7 @@
   },
   {
     "task_id": "T234",
-    "when": "2026-11-27T20:00:00",
+    "when": "2026-11-30T20:00:00",
     "platform": "tiktok",
     "fmt": "reel",
     "book": "Legami",
@@ -3643,7 +3643,7 @@
   },
   {
     "task_id": "T236",
-    "when": "2026-11-28T12:00:00",
+    "when": "2026-12-01T12:00:00",
     "platform": "facebook",
     "fmt": "storia",
     "book": "Legami",
@@ -3658,7 +3658,7 @@
   },
   {
     "task_id": "T235",
-    "when": "2026-11-28T12:00:00",
+    "when": "2026-12-01T12:00:00",
     "platform": "instagram",
     "fmt": "storia",
     "book": "Legami",
@@ -3673,7 +3673,7 @@
   },
   {
     "task_id": "T238",
-    "when": "2026-11-29T11:00:00",
+    "when": "2026-12-02T11:00:00",
     "platform": "facebook",
     "fmt": "carosello",
     "book": "Legami",
@@ -3690,7 +3690,7 @@
   },
   {
     "task_id": "T237",
-    "when": "2026-11-29T11:00:00",
+    "when": "2026-12-02T11:00:00",
     "platform": "instagram",
     "fmt": "carosello",
     "book": "Legami",
