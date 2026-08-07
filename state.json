@@ -55,6 +55,13 @@
       "format": "carosello",
       "content": "TRAILER",
       "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T001|instagram|reel|TRAILER": {
+      "at": "2026-08-07T20:05:25",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "TRAILER",
+      "info": "ig media 18118262026819906"
     }
   },
   "failed": {
