@@ -62,6 +62,13 @@
       "format": "reel",
       "content": "TRAILER",
       "info": "ig media 18118262026819906"
+    },
+    "T008|instagram|reel|CH01": {
+      "at": "2026-08-10T20:10:44",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH01",
+      "info": "ig media 17870342940582479"
     }
   },
   "failed": {
