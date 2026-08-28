@@ -111,6 +111,13 @@
       "format": "carosello",
       "content": "CH05",
       "info": "ig media 18131628070649189"
+    },
+    "T043|instagram|reel|CH06": {
+      "at": "2026-08-28T21:48:45",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH06",
+      "info": "ig media 18162749074482884"
     }
   },
   "failed": {
