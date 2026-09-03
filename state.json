@@ -335,6 +335,13 @@
       "format": "reel",
       "content": "TRAILER",
       "info": "tiktok bozza v_inbox_file~v2.7678385685224556566"
+    },
+    "T043|instagram|reel|CH06": {
+      "at": "2026-09-03T20:31:17",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH06",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
     }
   },
   "failed": {}
