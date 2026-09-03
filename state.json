@@ -56,259 +56,286 @@
       "content": "TRAILER",
       "info": "ig gia' pubblicato (trovato sul profilo)"
     },
-    "T001|instagram|reel|TRAILER": {
-      "at": "2026-08-07T20:05:25",
-      "platform": "instagram",
-      "format": "reel",
-      "content": "TRAILER",
-      "info": "ig media 18118262026819906"
-    },
-    "T008|instagram|reel|CH01": {
-      "at": "2026-08-10T20:10:44",
-      "platform": "instagram",
-      "format": "reel",
-      "content": "CH01",
-      "info": "ig media 17870342940582479"
-    },
-    "T013|instagram|carosello|CH01": {
-      "at": "2026-08-12T11:35:15",
-      "platform": "instagram",
-      "format": "carosello",
-      "content": "CH01",
-      "info": "ig media 17955788577189961"
-    },
-    "T015|instagram|reel|CH02": {
-      "at": "2026-08-14T20:01:53",
-      "platform": "instagram",
-      "format": "reel",
-      "content": "CH02",
-      "info": "ig media 18178409578439132"
-    },
-    "T022|instagram|reel|CH03": {
-      "at": "2026-08-17T20:02:51",
-      "platform": "instagram",
-      "format": "reel",
-      "content": "CH03",
-      "info": "ig media 18182263465408693"
-    },
-    "T027|instagram|carosello|CH03": {
-      "at": "2026-08-19T11:43:59",
-      "platform": "instagram",
-      "format": "carosello",
-      "content": "CH03",
-      "info": "ig media 18121535128861441"
-    },
-    "T036|instagram|reel|CH05": {
-      "at": "2026-08-24T21:00:53",
-      "platform": "instagram",
-      "format": "reel",
-      "content": "CH05",
-      "info": "ig media 17911816956451072"
-    },
-    "T041|instagram|carosello|CH05": {
-      "at": "2026-08-26T12:01:00",
-      "platform": "instagram",
-      "format": "carosello",
-      "content": "CH05",
-      "info": "ig media 18131628070649189"
-    },
-    "T043|instagram|reel|CH06": {
-      "at": "2026-08-28T21:48:45",
-      "platform": "instagram",
-      "format": "reel",
-      "content": "CH06",
-      "info": "ig media 18162749074482884"
-    }
-  },
-  "failed": {
     "T052|tiktok|reel|CH07": {
-      "at": "2026-08-02T15:50:09",
+      "at": "2026-08-07T14:36:37",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH07",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7671267558707808278"
     },
     "T059|tiktok|reel|CH08": {
-      "at": "2026-08-02T15:50:15",
+      "at": "2026-08-07T14:37:00",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH08",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7671267636583385110"
     },
     "T066|tiktok|reel|CH09": {
-      "at": "2026-08-02T15:50:20",
+      "at": "2026-08-07T14:37:23",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH09",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7671267628182456342"
     },
     "T073|tiktok|reel|CH10": {
-      "at": "2026-08-02T15:50:26",
+      "at": "2026-08-07T14:40:40",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH10",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7671268512287180822"
     },
     "T080|tiktok|reel|TRAILER": {
-      "at": "2026-08-02T15:50:32",
+      "at": "2026-08-07T14:41:02",
       "platform": "tiktok",
       "format": "reel",
       "content": "TRAILER",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7671268611302098966"
+    },
+    "T056|facebook|carosello|CH07": {
+      "at": "2026-08-26T14:26:48",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH07",
+      "info": "fb gia' programmato 1092859193920217_122117123043320018"
+    },
+    "T051|facebook|reel|CH07": {
+      "at": "2026-08-26T14:26:48",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH07",
+      "info": "fb gia' programmato 1092859193920217_122117122797320018"
+    },
+    "T049|facebook|carosello|CH06": {
+      "at": "2026-08-26T14:26:48",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH06",
+      "info": "fb gia' programmato 1092859193920217_122117122653320018"
+    },
+    "T058|facebook|reel|CH08": {
+      "at": "2026-08-26T14:27:00",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH08",
+      "info": "fb schedulato 122123024115320018"
+    },
+    "T063|facebook|carosello|CH08": {
+      "at": "2026-08-26T14:27:24",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH08",
+      "info": "fb schedulato 1092859193920217_122123024337320018"
+    },
+    "T065|facebook|reel|CH09": {
+      "at": "2026-08-26T14:27:42",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH09",
+      "info": "fb schedulato 122123024475320018"
+    },
+    "T070|facebook|carosello|CH09": {
+      "at": "2026-08-26T14:28:06",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH09",
+      "info": "fb schedulato 1092859193920217_122123024853320018"
+    },
+    "T072|facebook|reel|CH10": {
+      "at": "2026-08-26T14:28:24",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH10",
+      "info": "fb schedulato 122123025165320018"
+    },
+    "T077|facebook|carosello|CH10": {
+      "at": "2026-08-26T14:28:48",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH10",
+      "info": "fb schedulato 1092859193920217_122123025447320018"
+    },
+    "T079|facebook|reel|TRAILER": {
+      "at": "2026-08-26T14:29:07",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "TRAILER",
+      "info": "fb schedulato 122123025591320018"
+    },
+    "T084|facebook|carosello|TRAILER": {
+      "at": "2026-08-26T14:29:31",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "TRAILER",
+      "info": "fb schedulato 1092859193920217_122123025849320018"
+    },
+    "T086|facebook|reel|CH01": {
+      "at": "2026-08-26T14:29:47",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH01",
+      "info": "fb schedulato 122123025933320018"
+    },
+    "T091|facebook|carosello|CH01": {
+      "at": "2026-08-26T14:30:10",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH01",
+      "info": "fb schedulato 1092859193920217_122123026173320018"
+    },
+    "T093|facebook|reel|CH02": {
+      "at": "2026-08-26T14:30:27",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH02",
+      "info": "fb schedulato 122123026299320018"
+    },
+    "T098|facebook|carosello|CH02": {
+      "at": "2026-08-26T14:30:51",
+      "platform": "facebook",
+      "format": "carosello",
+      "content": "CH02",
+      "info": "fb schedulato 1092859193920217_122123026641320018"
+    },
+    "T100|facebook|reel|CH03": {
+      "at": "2026-08-26T14:31:08",
+      "platform": "facebook",
+      "format": "reel",
+      "content": "CH03",
+      "info": "fb schedulato 122123026755320018"
+    },
+    "T001|instagram|reel|TRAILER": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "TRAILER",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T008|instagram|reel|CH01": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH01",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T013|instagram|carosello|CH01": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "CH01",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T015|instagram|reel|CH02": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH02",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T022|instagram|reel|CH03": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH03",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T027|instagram|carosello|CH03": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "CH03",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T036|instagram|reel|CH05": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH05",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T041|instagram|carosello|CH05": {
+      "at": "2026-08-26T14:31:09",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "CH05",
+      "info": "ig gia' pubblicato (trovato sul profilo)"
     },
     "T087|tiktok|reel|CH01": {
-      "at": "2026-08-02T15:50:38",
+      "at": "2026-08-26T18:33:58",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH01",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7678379244598413334"
     },
     "T094|tiktok|reel|CH02": {
-      "at": "2026-08-02T15:50:43",
+      "at": "2026-08-26T18:39:15",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH02",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7678380552751433750"
     },
     "T101|tiktok|reel|CH03": {
-      "at": "2026-08-02T15:50:49",
+      "at": "2026-08-26T18:39:38",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH03",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7678380680384907286"
     },
     "T108|tiktok|reel|CH04": {
-      "at": "2026-08-02T15:50:55",
+      "at": "2026-08-26T18:40:00",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH04",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7678380680385103894"
     },
     "T115|tiktok|reel|CH05": {
-      "at": "2026-08-02T15:51:01",
+      "at": "2026-08-26T18:53:08",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH05",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7678384138155657238"
     },
     "T122|tiktok|reel|CH06": {
-      "at": "2026-08-02T15:51:07",
+      "at": "2026-08-26T18:53:30",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH06",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7678384358361483286"
     },
     "T129|tiktok|reel|CH07": {
-      "at": "2026-08-02T15:51:13",
+      "at": "2026-08-26T18:53:53",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH07",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7678384183232464918"
     },
     "T136|tiktok|reel|CH08": {
-      "at": "2026-08-02T15:51:19",
+      "at": "2026-08-26T18:57:06",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH08",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7678385048579721238"
     },
     "T143|tiktok|reel|CH09": {
-      "at": "2026-08-02T15:51:25",
+      "at": "2026-08-26T18:57:28",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH09",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7678385388310562838"
     },
     "T150|tiktok|reel|CH10": {
-      "at": "2026-08-02T15:51:31",
+      "at": "2026-08-26T18:57:51",
       "platform": "tiktok",
       "format": "reel",
       "content": "CH10",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
+      "info": "tiktok bozza v_inbox_file~v2.7678385240607770627"
     },
     "T157|tiktok|reel|TRAILER": {
-      "at": "2026-08-02T15:51:36",
+      "at": "2026-08-26T18:59:20",
       "platform": "tiktok",
       "format": "reel",
       "content": "TRAILER",
-      "info": "TikTok: spam_risk_too_many_pending_share"
-    },
-    "T164|tiktok|reel|CH01": {
-      "at": "2026-08-02T15:51:42",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH01",
-      "info": "TikTok: spam_risk_too_many_pending_share"
-    },
-    "T171|tiktok|reel|CH02": {
-      "at": "2026-08-02T15:51:48",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH02",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
-    },
-    "T178|tiktok|reel|CH03": {
-      "at": "2026-08-02T15:51:54",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH03",
-      "info": "TikTok: spam_risk_too_many_pending_share"
-    },
-    "T185|tiktok|reel|CH04": {
-      "at": "2026-08-02T15:52:00",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH04",
-      "info": "TikTok: spam_risk_too_many_pending_share"
-    },
-    "T192|tiktok|reel|CH05": {
-      "at": "2026-08-02T15:52:06",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH05",
-      "info": "TikTok: spam_risk_too_many_pending_share"
-    },
-    "T199|tiktok|reel|CH06": {
-      "at": "2026-08-02T15:52:12",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH06",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
-    },
-    "T206|tiktok|reel|CH07": {
-      "at": "2026-08-02T15:52:18",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH07",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
-    },
-    "T213|tiktok|reel|CH08": {
-      "at": "2026-08-02T15:52:24",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH08",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
-    },
-    "T220|tiktok|reel|CH09": {
-      "at": "2026-08-02T15:52:29",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH09",
-      "info": "TikTok: spam_risk_too_many_pending_share"
-    },
-    "T227|tiktok|reel|CH10": {
-      "at": "2026-08-02T15:52:35",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "CH10",
-      "info": "TikTok: The API rate limit exceeded. Please try again later."
-    },
-    "T234|tiktok|reel|EXTRA": {
-      "at": "2026-08-02T15:52:41",
-      "platform": "tiktok",
-      "format": "reel",
-      "content": "EXTRA",
-      "info": "TikTok: spam_risk_too_many_pending_share"
+      "info": "tiktok bozza v_inbox_file~v2.7678385685224556566"
     }
-  }
+  },
+  "failed": {}
 }
