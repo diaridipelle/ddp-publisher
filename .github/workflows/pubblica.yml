@@ -33,7 +33,7 @@ jobs:
           TOKEN_FACEBOOK: ${{ secrets.TOKEN_FACEBOOK }}
         run: |
           python ddp_publisher.py build --config config.json
-          python ddp_publisher.py run --config config.json --window 120
+          python ddp_publisher.py run --config config.json --window 1440
 
       - name: Salvo cosa e stato pubblicato
         run: |
