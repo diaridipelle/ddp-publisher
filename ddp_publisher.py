@@ -474,7 +474,25 @@ def cmd_plan(cfg, args) -> None:
         print("(niente in questo periodo con questi filtri)")
 
 
+def pulisci_falliti_tiktok(cfg) -> int:
+    """Toglie dai falliti gli errori di limite TikTok: non sono errori veri."""
+    state = load_state(cfg)
+    da_togliere = [k for k, v in state["failed"].items()
+                   if any(s in v.get("info", "").lower() for s in
+                          ("rate limit", "spam_risk", "too_many_pending"))]
+    for k in da_togliere:
+        state["failed"].pop(k)
+    if da_togliere:
+        save_state(cfg, state)
+    return len(da_togliere)
+
+
 def cmd_status(cfg) -> None:
+    puliti = pulisci_falliti_tiktok(cfg)
+    if puliti:
+        print(f"({puliti} blocchi TikTok rimossi dai falliti: "
+              f"non erano errori, riproveranno da soli)\n")
+
     tasks = load_queue(cfg)
     state = load_state(cfg)
     done = sum(1 for t in tasks if t.key in state["done"])
@@ -928,6 +946,72 @@ def make_clients(cfg, dry: bool):
     if cfg.get("tiktok", {}).get("enabled"):
         c = TikTokClient(cfg); c.dry = dry; clients["tk"] = c
     return clients
+
+
+def cmd_recupera(cfg, args) -> None:
+    """
+    Pubblica gli arretrati POCHI PER VOLTA, con pause lunghe.
+    Serve quando il sistema e' rimasto fermo e si sono accumulati contenuti:
+    pubblicarli tutti insieme farebbe sembrare il profilo uno spam.
+    """
+    tasks = filter_tasks(load_queue(cfg), args)
+    state = load_state(cfg)
+    clients = make_clients(cfg, args.dry_run)
+
+    if not args.dry_run:
+        if "ig" in clients and verifica_token_ig(cfg):
+            clients.pop("ig")
+        if "fb" in clients and verifica_token_fb(cfg):
+            clients.pop("fb")
+
+    now = datetime.now()
+    arretrati = [t for t in tasks
+                 if t.dt < now
+                 and t.key not in state["done"]
+                 and PLAT_KEY.get(t.platform) in clients]
+    arretrati.sort(key=lambda x: x.dt)
+
+    if not arretrati:
+        print("Nessun arretrato da recuperare.")
+        return
+
+    quanti = getattr(args, "limit", 0) or 2
+    scelti = arretrati[:quanti]
+    pausa = max(1, getattr(args, "pausa", 45))
+
+    print(f"\n{len(arretrati)} contenuti arretrati in tutto.")
+    print(f"Ne pubblico {len(scelti)}, uno ogni {pausa} minuti.\n")
+    for t in scelti:
+        print(f"  {t.dt:%d/%m %H:%M}  {t.platform:9} {t.fmt:9} "
+              f"{t.content_id} - {t.title}")
+
+    if not args.dry_run and not args.yes:
+        if input("\nScrivi SI per procedere: ").strip().upper() not in (
+                "SI", "SÌ", "S", "YES"):
+            print("Annullato.")
+            return
+
+    for n, t in enumerate(scelti, 1):
+        if n > 1 and not args.dry_run:
+            print(f"\n   aspetto {pausa} minuti prima del prossimo...")
+            time.sleep(pausa * 60)
+        print(f"\n[{n}/{len(scelti)}] {t.platform}/{t.fmt} {t.content_id}")
+        try:
+            info = publish_task(cfg, t, clients, args.dry_run)
+            print(f"    OK: {info}")
+            if not args.dry_run:
+                mark(state, t, True, info)
+                save_state(cfg, state)
+        except Exception as e:
+            print(f"    ERRORE: {e}")
+            if not args.dry_run:
+                mark(state, t, False, str(e))
+                save_state(cfg, state)
+
+    rimasti = len(arretrati) - len(scelti)
+    if rimasti:
+        print(f"\nRestano {rimasti} arretrati. Rilancia domani lo stesso comando.")
+    print("\nRicordati di caricare state.json su GitHub.")
 
 
 def cmd_run(cfg, args) -> None:
@@ -1710,13 +1794,25 @@ def cmd_tiktok_batch(cfg, args) -> None:
             righe.append("```")
             righe.append("")
         except Exception as e:
-            print(f"    ERRORE: {e}")
+            testo = str(e)
+            print(f"    ERRORE: {testo}")
             errori += 1
             if not args.dry_run:
-                mark(state, t, False, str(e))
+                # Questi non sono errori veri: TikTok dice "basta per ora".
+                # Non li segno come falliti, cosi' restano puliti in coda.
+                if any(s in testo.lower() for s in
+                       ("rate limit", "spam_risk", "too_many_pending")):
+                    print("\n>>> TIKTOK HA MESSO IL FRENO.")
+                    print("    Hai troppe bozze non ancora pubblicate.")
+                    print(f"    Caricati finora: {ok}. Gli altri restano in coda.")
+                    print("\n    Apri l'app TikTok, pubblica le bozze che hai,")
+                    print("    poi rilancia questo comando fra qualche ora.")
+                    errori -= 1
+                    break
+                mark(state, t, False, testo)
                 save_state(cfg, state)
         if not args.dry_run and n < len(da_fare):
-            time.sleep(5)
+            time.sleep(20)
 
     outdir = Path(cfg["_dir"]) / "DA_PUBBLICARE_A_MANO"
     outdir.mkdir(exist_ok=True)
@@ -1972,7 +2068,7 @@ def main():
                              "export", "fb-batch", "status",
                              "token", "token-check", "fb-list",
                              "sync", "auto", "token-instagram", "ig-sync",
-                             "ig-refresh", "reset", "token-tiktok", "tiktok-batch"])
+                             "ig-refresh", "reset", "token-tiktok", "tiktok-batch", "recupera"])
     ap.add_argument("--config", default="config.json")
     ap.add_argument("--days", type=int, default=7,
                     help="quanti giorni avanti programmare (max 180)")
@@ -1992,6 +2088,8 @@ def main():
                    help="reel, storia, carosello")
     g.add_argument("--task", metavar="ID",
                    help="numero preciso del task: T001")
+    g.add_argument("--pausa", type=int, default=45,
+                   help="minuti di attesa tra un recupero e l'altro")
     g.add_argument("--limit", type=int, default=0,
                    help="carica al massimo N video (0 = tutti)")
     g.add_argument("--yes", action="store_true",
@@ -2038,6 +2136,8 @@ def main():
         cmd_token_tiktok(cfg, args)
     elif args.command == "tiktok-batch":
         cmd_tiktok_batch(cfg, args)
+    elif args.command == "recupera":
+        cmd_recupera(cfg, args)
 
 
 if __name__ == "__main__":
