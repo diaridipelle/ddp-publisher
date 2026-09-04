@@ -342,6 +342,13 @@
       "format": "reel",
       "content": "CH06",
       "info": "ig gia' pubblicato (trovato sul profilo)"
+    },
+    "T057|instagram|reel|CH08": {
+      "at": "2026-09-04T20:18:06",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH08",
+      "info": "ig media 17906918574309934"
     }
   },
   "failed": {}
