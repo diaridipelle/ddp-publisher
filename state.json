@@ -419,6 +419,13 @@
       "format": "storia",
       "content": "TRAILER",
       "info": "ig media 18112980920592740"
+    },
+    "T083|instagram|carosello|TRAILER": {
+      "at": "2026-09-16T13:57:24",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "TRAILER",
+      "info": "ig media 18105733394601676"
     }
   },
   "failed": {}
