@@ -524,6 +524,13 @@
       "format": "storia",
       "content": "CH05",
       "info": "ig media 18212560891358040"
+    },
+    "T118|instagram|carosello|CH05": {
+      "at": "2026-10-04T20:53:20",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "CH05",
+      "info": "ig media 18171632617454820"
     }
   },
   "failed": {}
