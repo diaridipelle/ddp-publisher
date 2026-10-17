@@ -601,6 +601,13 @@
       "format": "reel",
       "content": "CH09",
       "info": "ig media 18181789228428183"
+    },
+    "T144|instagram|storia|CH09": {
+      "at": "2026-10-17T12:37:03",
+      "platform": "instagram",
+      "format": "storia",
+      "content": "CH09",
+      "info": "ig media 18132399613683144"
     }
   },
   "failed": {}
