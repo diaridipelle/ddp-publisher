@@ -650,6 +650,13 @@
       "format": "storia",
       "content": "TRAILER",
       "info": "ig media 18080819021443557"
+    },
+    "T160|instagram|carosello|TRAILER": {
+      "at": "2026-10-25T20:23:49",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "TRAILER",
+      "info": "ig media 18028044320870937"
     }
   },
   "failed": {}
