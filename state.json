@@ -692,6 +692,13 @@
       "format": "storia",
       "content": "CH02",
       "info": "ig media 18077437598738469"
+    },
+    "T174|instagram|carosello|CH02": {
+      "at": "2026-11-01T21:42:55",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "CH02",
+      "info": "ig media 17926449687433136"
     }
   },
   "failed": {}
