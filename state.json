@@ -706,6 +706,13 @@
       "format": "reel",
       "content": "CH03",
       "info": "ig media 17916607248494063"
+    },
+    "T179|instagram|storia|CH03": {
+      "at": "2026-11-03T16:45:36",
+      "platform": "instagram",
+      "format": "storia",
+      "content": "CH03",
+      "info": "ig media 18096507062176175"
     }
   },
   "failed": {}
