@@ -734,6 +734,13 @@
       "format": "storia",
       "content": "CH04",
       "info": "ig media 18130879006868076"
+    },
+    "T188|instagram|carosello|CH04": {
+      "at": "2026-11-08T21:41:26",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "CH04",
+      "info": "ig media 17940446067122617"
     }
   },
   "failed": {}
