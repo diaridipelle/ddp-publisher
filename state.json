@@ -755,6 +755,13 @@
       "format": "storia",
       "content": "CH05",
       "info": "ig media 18616176931067218"
+    },
+    "T195|instagram|carosello|CH05": {
+      "at": "2026-11-11T16:48:23",
+      "platform": "instagram",
+      "format": "carosello",
+      "content": "CH05",
+      "info": "ig media 18120499376078911"
     }
   },
   "failed": {}
