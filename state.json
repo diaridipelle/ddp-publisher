@@ -769,6 +769,13 @@
       "format": "reel",
       "content": "CH06",
       "info": "ig media 18046372322807740"
+    },
+    "T200|instagram|storia|CH06": {
+      "at": "2026-11-14T15:26:51",
+      "platform": "instagram",
+      "format": "storia",
+      "content": "CH06",
+      "info": "ig media 18388544407231322"
     }
   },
   "failed": {}
