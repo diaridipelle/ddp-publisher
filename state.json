@@ -827,5 +827,13 @@
       "info": "ig media 18686307811001863"
     }
   },
-  "failed": {}
+  "failed": {
+    "T218|instagram|reel|CH09": {
+      "at": "2026-11-23T20:47:59",
+      "platform": "instagram",
+      "format": "reel",
+      "content": "CH09",
+      "info": "IG container in errore: ERROR"
+    }
+  }
 }
